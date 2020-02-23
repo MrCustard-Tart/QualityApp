@@ -1,0 +1,60 @@
+<p *ngFor="let project of projects">
+  <li>{{project.id}}, {{project.name}} </li>
+</p> 
+
+<h1>Create New Project</h1>
+
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="ProjectName">Project Name</label>
+        <input type="text" class="form-control" id="ProjectName">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="ProjectNumber">Project Number</label>
+        <input type="text" class="form-control" id="ProjectNumber">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="streetNumber">Street Number</label>
+        <input type="text" class="form-control" id="streetNumber">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputStreet">Street</label>
+        <input type="text" class="form-control" id="inputStreet">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputSuburb">Suburb</label>
+        <input type="text" class="form-control" id="inputSuburb">
+      </div>
+      <div class="form-group col-md-3">
+        <label for="inputState">State</label>
+        <select id="inputState" class="form-control">
+          <option selected>Choose...</option>
+          <option>NSW</option>
+          <option>QLD</option>
+          <option>VIC</option>
+          <option>TAS</option>
+          <option>SA</option>
+          <option>WA</option>
+          <option>NT</option>
+          <option>ACT</option>
+        </select>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="postCode">Post Code</label>
+        <input type="text" class="form-control" id="postCode">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="client">Client</label>
+        <select class="form-control" id="client">
+          <option value=""></option>
+          
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="contractNumber">Contract Number</label>
+        <input type="text" class="form-control" id="contractNumber">
+      </div>
+    </div>
+    <a href='../client/new'>Click here to enter a new client</a>
+  </form>
